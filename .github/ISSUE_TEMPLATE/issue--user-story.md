@@ -1,9 +1,9 @@
 ---
 name: 'Issue: User Story'
 about: Default User Story Template
-title: ''
-labels: ''
-assignees: ''
+title: 'User Story: '
+labels: User story
+assignees: CarmenCantudo
 
 ---
 
