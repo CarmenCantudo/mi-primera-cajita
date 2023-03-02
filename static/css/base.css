@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Shantell Sans', cursive;
 }
 
 /* from Bulma */
@@ -33,11 +33,6 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -52,17 +47,25 @@ body {
     color: #000 !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
+/* Navbar */
+
+header {
+    background-color: #E9EDC9;
+}
+
+.search-bar {
+    min-width: 20rem;
+    left: auto;
+    right: 0px;
 }
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -77,5 +80,11 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        flex-wrap: nowrap;
     }
 }
