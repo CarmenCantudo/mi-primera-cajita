@@ -1,1 +1,1 @@
-web: gunicorn codestar.wsgi
+web: gunicorn my_first_box.wsgi:application
