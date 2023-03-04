@@ -59,6 +59,27 @@ header {
     right: 0px;
 }
 
+/*****************/
+/* Products page */
+/*****************/
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.product-hr {
+    width: 5%;
+    text-align: center;
+}
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
