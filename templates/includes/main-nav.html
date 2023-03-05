@@ -1,7 +1,8 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,50 +14,67 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Muslins
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Cotton Muslins</a>
-                <a href="" class="dropdown-item">Cotton & Bamboo Muslins</a>
-                <a href="" class="dropdown-item">Premium Soft Muslins</a>
-                <a href="" class="dropdown-item">All Muslins</a>
+                <a href="{% url 'products' %}?category=cotton_muslins" class="dropdown-item">Cotton Muslins</a>
+                <a href="{% url 'products' %}?category=cotton_bamboo_muslins" class="dropdown-item">Cotton &amp; Bamboo
+                    Muslins</a>
+                <a href="{% url 'products' %}?category=premium_soft_muslins" class="dropdown-item">Premium Soft
+                    Muslins</a>
+                <a href="{% url 'products' %}?category=cotton_muslins,cotton_bamboo_muslins,premium_soft_muslins"
+                    class="dropdown-item">All Muslins</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Pacifier chains
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Mini pacifier chains</a>
-                <a href="" class="dropdown-item">Personalised pacifier chains</a>
-                <a href="" class="dropdown-item">Pacifier holder case</a>
-                <a href="" class="dropdown-item">All Pacifiers</a>
+                <a href="{% url 'products' %}?category=mini_pacifier_chains" class="dropdown-item">Mini pacifier
+                    chains</a>
+                <a href="{% url 'products' %}?category=personalised_pacifier_chains" class="dropdown-item">Personalised
+                    pacifier chains</a>
+                <a href="{% url 'products' %}?category=pacifier_holder_case" class="dropdown-item">Pacifier holder
+                    case</a>
+                <a href="{% url 'products' %}?category=mini_pacifier_chains,personalised_pacifier_chains,pacifier_holder_case"
+                    class="dropdown-item">All Pacifiers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Teethers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Stroller Chain Teethers</a>
-                <a href="" class="dropdown-item">Teether Toy Figures</a>
-                <a href="" class="dropdown-item">All Teethers</a>
+                <a href="{% url 'products' %}?category=stroller_chain_teethers" class="dropdown-item">Stroller Chain
+                    Teethers</a>
+                <a href="{% url 'products' %}?category=teether_toy_figures" class="dropdown-item">Teether Toy
+                    Figures</a>
+                <a href="{% url 'products' %}?category=stroller_chain_teethers,teether_toy_figures"
+                    class="dropdown-item">All Teethers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More pretty things
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Bibs</a>
-                <a href="" class="dropdown-item">Breastfeeding Necklaces</a>
-                <a href="" class="dropdown-item">Personalised Keyrings</a>
-                <a href="" class="dropdown-item">Bracelets</a>
-                <a href="" class="dropdown-item">All Pretty Things</a>
+                <a href="{% url 'products' %}?category=bibs" class="dropdown-item">Bibs</a>
+                <a href="{% url 'products' %}?category=breastfeeding_necklaces" class="dropdown-item">Breastfeeding
+                    Necklaces</a>
+                <a href="{% url 'products' %}?category=personalised_keyrings" class="dropdown-item">Personalised
+                    Keyrings</a>
+                <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">Bracelets</a>
+                <a href="{% url 'products' %}?category=bibs,breastfeeding_necklaces,personalised_keyrings,bracelets"
+                    class="dropdown-item">All Pretty Things</a>
             </div>
         </li>
     </ul>
