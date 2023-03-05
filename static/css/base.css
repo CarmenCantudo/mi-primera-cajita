@@ -53,6 +53,30 @@ header {
     background-color: #E9EDC9;
 }
 
+.navbar {
+    flex-direction: column;
+}
+
+.phone-view {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-toggler {
+    display: flex;
+    align-self: center;
+}
+
+.phone-view ul {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: right;
+    margin-bottom: 0;
+}
+
 .search-bar {
     min-width: 20rem;
     left: auto;
@@ -104,8 +128,25 @@ header {
     }
 }
 
-@media (max-width: 400px) {
-    .navbar {
+@media (max-width: 431px) {
+    .phone-view {
+        display: flex;
+        align-items: baseline;
         flex-wrap: nowrap;
+    }
+
+    .phone-view ul {
+        padding-left: 0;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
