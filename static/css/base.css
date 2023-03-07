@@ -84,17 +84,58 @@ header {
 }
 
 /*****************/
+/* Home page */
+/*****************/
+
+.carousel {
+    height: 400px;
+}
+
+.carousel-inner {
+    height: inherit;
+}
+
+.carousel-item {
+    height: inherit;
+}
+
+.carousel-img1 {
+    background: url('https://scontent-dub4-1.xx.fbcdn.net/v/t39.30808-6/317241915_479100194324310_1898952404562974442_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9ZQaNWvlWb8AX-3iGLx&_nc_ht=scontent-dub4-1.xx&oh=00_AfC9_q9OYyUccSJKE2VL5D2LlUzFjDDhz_ZBG2c4YQqBNg&oe=640BD28E') no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-img2 {
+    background: url('https://scontent-dub4-1.xx.fbcdn.net/v/t39.30808-6/320743824_880084756771553_6827135769749912811_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Il9AymocoyAAX_lXyVp&_nc_ht=scontent-dub4-1.xx&oh=00_AfB90WsBxpAZPSGyNr4kV_nwoAWGd8HeoS0wbi24MwFGFw&oe=640BDAB0') no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-img3 {
+    background: url('https://scontent-dub4-1.xx.fbcdn.net/v/t39.30808-6/314416138_465098155724514_1999875988834954854_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=gz6zlSqlTAkAX-Si7ws&_nc_ht=scontent-dub4-1.xx&oh=00_AfAzvPMWdfhy-35vJvsTxLVEnGCFF6YM5CIgen89lcgGJw&oe=640AB272') no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-caption {
+    width: 100%;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    padding-bottom: 20px;
+    background-color: rgb(204, 213, 174, 74%);
+}
+
+
+/*****************/
 /* Products page */
 /*****************/
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 .product-hr {
@@ -110,21 +151,6 @@ header {
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
-    }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
     }
 }
 
