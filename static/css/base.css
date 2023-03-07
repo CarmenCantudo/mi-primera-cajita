@@ -28,7 +28,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #6B793E;
     color: white;
     min-width: 260px;
 }
@@ -43,8 +43,8 @@ body {
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
+.text-green {
+    color: #6B793E !important
 }
 
 /* Navbar */
@@ -141,6 +141,14 @@ header {
 .product-hr {
     width: 5%;
     text-align: center;
+}
+
+a.category-badge > span.badge:hover {
+    background: #FAEDCD !important;
+}
+
+.border {
+    border: 1px solid #FAEDCD!important;
 }
 
 
