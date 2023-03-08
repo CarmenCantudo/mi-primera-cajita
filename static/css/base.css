@@ -3,8 +3,6 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Shantell Sans', cursive;
@@ -82,6 +80,19 @@ header {
     left: auto;
     right: 0px;
 }
+
+.dropdown-menu.show {
+    background-color: inherit;
+}
+
+.dropdown-menu {
+    background-color: #E9EDC9!important;
+}
+
+.dropdown-item:hover {
+    background-color: #CCD5AE;
+}
+
 
 /*****************/
 /* Home page */
@@ -188,11 +199,12 @@ a.category-badge > span.badge:hover {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
     body {
         height: calc(100vh - 116px);
+    }
+
+    .collapse-menu {
+        display: flex;
+        align-self: flex-start;
     }
 }
