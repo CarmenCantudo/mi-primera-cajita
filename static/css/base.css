@@ -46,6 +46,15 @@ body {
     color: #6B793E !important
 }
 
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-green {
+    background: #6B793E !important;
+}
+
+
 /* Navbar */
 
 header {
