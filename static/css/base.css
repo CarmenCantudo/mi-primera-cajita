@@ -32,12 +32,30 @@ body {
     min-width: 260px;
 }
 
+.btn-sand {
+    background: #B97A50;
+    color: white;
+}
+
+.btn-outline-green {
+    background: white;
+    color: #CCD5AE !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #83944C;
+}
+
+.btn-outline-green:hover,
+.btn-outline-green:active,
+.btn-outline-green:focus {
+    background: #83944C;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-sand:hover,
+.btn-sand:active,
+.btn-sand:focus {
     background: #222;
     color: white;
 }
