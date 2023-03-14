@@ -39,7 +39,7 @@ body {
 
 .btn-outline-green {
     background: white;
-    color: #CCD5AE !important; /* use important to override link colors for <a> elements */
+    color: #83944C !important; /* use important to override link colors for <a> elements */
     border: 1px solid #83944C;
 }
 
