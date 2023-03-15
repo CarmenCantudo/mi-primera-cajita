@@ -53,9 +53,11 @@ var form = document.getElementById('payment-form');
 // When the form is submitted, prevent its default behavior
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
-    // Disable the card input field and submit button
+    // Disable the card input field and submit button + toggle
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
+    $('#payment-form').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100);
     // Send payment information to Stripe for processing
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
@@ -71,6 +73,8 @@ form.addEventListener('submit', function(ev) {
                 </span>
                 <span>${result.error.message}</span>`;
             $(errorDiv).html(html);
+            $('#payment-form').fadeToggle(100);
+            $('#loading-overlay').fadeToggle(100);
             card.update({ 'disabled': false});
             $('#submit-button').attr('disabled', false);
         } else {
