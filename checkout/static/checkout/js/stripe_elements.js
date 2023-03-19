@@ -30,7 +30,7 @@ var card = elements.create('card', {
 card.mount('#card-element');
 
 // Handle realtime validation errors on the card element
-card.addEventListener('change', function (event) {
+card.addEventListener('change', function(event) {
     var errorDiv = document.getElementById('card-errors');
     // If error with card input, display error message
     if (event.error) {
@@ -53,7 +53,7 @@ card.addEventListener('change', function (event) {
 var form = document.getElementById('payment-form');
 
 // When the form is submitted, prevent its default behavior
-form.addEventListener('submit', function (ev) {
+form.addEventListener('submit', function(ev) {
     ev.preventDefault();
     // Disable the card input field and submit button + toggle
     card.update({
