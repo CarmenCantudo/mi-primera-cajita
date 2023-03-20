@@ -50,9 +50,7 @@ def checkout(request):
             'county': request.POST['county'],
         }
         order_form = OrderForm(form_data)
-        # print(order_form)
-        # print("errors")
-        # print(order_form.errors)
+        
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
@@ -88,7 +86,7 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            print("form errors", order.errors)
+
             return redirect(reverse('checkout_success',
                                     args=[order.order_number]))
         else:
