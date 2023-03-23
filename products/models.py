@@ -29,11 +29,11 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     has_colour = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     quantity = models.DecimalField(max_digits=3, decimal_places=0, default=0)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    available = models.BooleanField(default=False)
+    available = models.BooleanField(default=True)
     favourites = models.ManyToManyField(User, related_name='favourites',
                                         blank=True)
     created_on = models.DateTimeField(auto_now_add=True, blank=True, null=True)
