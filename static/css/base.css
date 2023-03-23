@@ -351,6 +351,16 @@ input[name='q']::placeholder {
     .container {
         max-width: 80%;
     }
+    
+    .nav-flex {
+        display: contents;
+    }
+}
+
+@media (max-width: 1200px) {    
+    .nav-flex {
+        display: contents;
+    }
 }
 
 @media (max-width: 431px) {
@@ -362,6 +372,7 @@ input[name='q']::placeholder {
 
     .phone-view ul {
         padding-left: 0;
+        display: contents;
     }
 }
 
