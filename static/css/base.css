@@ -216,6 +216,41 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+
+/*****************/
+/* Products Form */
+/*****************/
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0 !important;
+    border-color: #83944C !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #83944C;
+    border-color: #83944C;
+    border-radius: 0;
+}
+
+
+
+
+
 /* ------------------------------- bootstrap toasts */
 
 
@@ -353,13 +388,17 @@ input[name='q']::placeholder {
     }
     
     .nav-flex {
-        display: contents;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
     }
 }
 
 @media (max-width: 1200px) {    
     .nav-flex {
-        display: contents;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
     }
 }
 
@@ -385,5 +424,15 @@ input[name='q']::placeholder {
     .collapse-menu {
         display: flex;
         align-self: flex-start;
+    }
+    
+    .nav-flex {
+        display: contents;
+    }
+}
+
+@media (max-width: 1048px) {
+    .nav-flex {
+        display: contents;
     }
 }
