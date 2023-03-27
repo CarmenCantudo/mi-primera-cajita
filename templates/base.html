@@ -178,7 +178,7 @@
                     <small class="d-block mb-3 text-green">© 2023</small>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Products</h5>
+                    <h5 class="text-dgreen">Products</h5>
                     <ul class="list-unstyled text-small">
                     <li><a class="text-green" href="{% url 'products' %}?category=cotton_muslins,cotton_bamboo_muslins,premium_soft_muslins"
                         class="dropdown-item">Muslins</a></li>
@@ -192,7 +192,7 @@
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>My Account</h5>
+                    <h5 class="text-dgreen">My Account</h5>
                     <ul class="list-unstyled text-small">
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
@@ -207,7 +207,7 @@
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>About</h5>
+                    <h5 class="text-dgreen">About</h5>
                     <ul class="list-unstyled text-small">
                     <li><a class="text-green" href="#">Team</a></li>
                     <li><a class="text-green" href="#">Locations</a></li>
