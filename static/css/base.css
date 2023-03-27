@@ -140,7 +140,7 @@ header {
 
 
 /*****************/
-/* Home page */
+/*   Home page   */
 /*****************/
 
 .carousel {
@@ -256,6 +256,14 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+
+/*****************/
+/*   Bag page    */
+/*****************/
+
+.qty_input {
+    text-align: center;
+}
 
 
 
