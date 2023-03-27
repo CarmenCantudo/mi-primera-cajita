@@ -170,6 +170,55 @@
     {% block content %}
     {% endblock %}
 
+    <footer class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="footer-img mb-2" src="{{ MEDIA_URL }}logo-mpc.webp" alt="Mi primera cajita Logo">
+                    <small class="d-block mb-3 text-green">© 2023</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled text-small">
+                    <li><a class="text-green" href="{% url 'products' %}?category=cotton_muslins,cotton_bamboo_muslins,premium_soft_muslins"
+                        class="dropdown-item">Muslins</a></li>
+                    <li><a class="text-green" href="{% url 'products' %}?category=mini_pacifier_chains,personalised_pacifier_chains,pacifier_holder_case"
+                        class="dropdown-item">Pacifiers</a></li>
+                    <li><a class="text-green" href="{% url 'products' %}?category=stroller_chain_teethers,teether_toy_figures"
+                        class="dropdown-item">Teethers</a></li>
+                    <li><a class="text-green" href="{% url 'products' %}?category=bibs,breastfeeding_necklaces,personalised_keyrings,bracelets"
+                        class="dropdown-item">More Pretty Things</a></li>
+                    <li><a class="text-green" href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>My Account</h5>
+                    <ul class="list-unstyled text-small">
+                        {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <li><a class="text-green" href="{% url 'add_product' %}">Product Management</a></li>
+                            {% endif %}
+                        <li><a class="text-green" href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
+                        <li><a class="text-green" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                        {% else %}
+                        <li><a class="text-green" href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                        <li><a class="text-green" href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                    <li><a class="text-green" href="#">Team</a></li>
+                    <li><a class="text-green" href="#">Locations</a></li>
+                    <li><a class="text-green" href="#">Privacy</a></li>
+                    <li><a class="text-green" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+
     <div class="btt-button shadow-sm rounded-pill border border-black">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-green mx-auto my-auto"></i>

@@ -92,7 +92,7 @@ a.text-dgreen {
 
 /* Navbar */
 
-header {
+header, footer {
     background-color: #E9EDC9;
 }
 
@@ -136,6 +136,11 @@ header {
 
 .dropdown-item:hover {
     background-color: #CCD5AE;
+}
+
+/* Footer */
+.footer-img {
+    width: 100px;
 }
 
 
