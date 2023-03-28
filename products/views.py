@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, ProductReview
+from .forms import ProductForm, ProductReviewForm
 
 
 def all_products(request):
@@ -67,9 +67,18 @@ def product_detail(request, product_id):
     from Code Institute Boutique Ado
     """
     product = get_object_or_404(Product, pk=product_id)
+    favourite = False
+    reviews = ProductReview.objects.filter(product_id=product.id).order_by('-created_on')  # noqa
+    total_reviews = reviews.count()
+
+    if product.favourites.filter(id=request.user.id).exists():
+        favourite = True
 
     context = {
         'product': product,
+        'favourite': favourite,
+        'reviews': reviews,
+        'total_reviews': total_reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -89,7 +98,7 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Successfully added product!')
+            messages.success(request, 'Product successfully added!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(
@@ -156,3 +165,81 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request, product_id):
+    """ Add a product review """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ProductReviewForm(request.POST)
+        if form.is_valid():
+            data = Review()
+            data.review = form.cleaned_data['review']
+            data.rating = form.cleaned_data['rating']
+            data.product = product
+            data.user_id = request.user.id
+            data.save()
+            messages.success(request,
+                             'Review sent for approval!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request,
+                           "Sorry your review could not be submitted.")
+            return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        form = ProductReviewForm()
+
+    template = 'products/product_detail.html'
+
+    return render(request, template)
+
+
+def edit_review(request, review_id):
+    """ Edit a product review """
+    review = get_object_or_404(ProductReview, id=review_id)
+    product = review.product
+
+    if request.method == 'POST':
+        form = ProductReviewForm(request.POST, request.FILES, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your review has being successfully \
+                             updated!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request,
+                           'Your review couldn\'t be updated. \
+                            Please ensure the form is valid.'
+                           )
+    else:
+        form = ProductReviewForm(instance=review)
+        messages.info(request, 'You are editing your review')
+
+    template = 'products/edit_review.html'
+
+    context = {
+        'form': form,
+        'review': review,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id, ):
+    """ Delete a product review """
+    review = get_object_or_404(ProductReview, id=review_id)
+
+    if request.user == review.user:
+        review.delete()
+        messages.success(request, 'Review deleted!')
+
+        return redirect('product_detail', review.product.id)
+    else:
+        messages.error(
+            request,
+            'Failed to delete review. Please ensure that you have permission.')
+
+    return redirect('product_detail', review.product.id)

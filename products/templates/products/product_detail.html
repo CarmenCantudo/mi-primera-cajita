@@ -28,7 +28,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
+                <h2 class="logo-font mb-2">{{ product.name }}</h2>
                 <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
@@ -69,6 +69,7 @@
                             </select>
                         </div>
                         {% endif %}
+                        <!-- Product Quantity -->
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
@@ -110,6 +111,58 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- Review -->
+<div class="container">
+    <!-- Number of Reviews -->
+    <div class="row my-2 justify-content-md-center">
+        <div class="col col-lg-10">
+            <h4 class="text-green">Reviews ({{total_reviews}})</h4>
+        </div>
+    </div>
+    <!-- Users Reviews -->
+    <div class="row my-2 justify-content-md-center">
+        {% if reviews %}
+        {% for review in reviews %}
+        <div class="col col-lg-10 text-center mt-2 mb-5">
+            <div class="card">
+                <div class="card-title px-2 pt-2 pb-0">
+                    <p class="text-left mb-0 font-weight-bold">
+                        <span class="text-capitalize">{{ review.user }}</span> - {{review.created_on}}
+                    </p>
+                </div>
+                <div class="card-body px-2 pb-2 pt-0">
+                    <p class="text-left">{{ review.review }}</p>
+                    {% if review.user == user %}
+                    <a class="text-green" href="{% url 'edit_review' review.id %}">Edit</a> |
+                    <a onclick="return confirm('Are you sure you want to delete?');"
+                        class='text-danger' href="{% url 'delete_review' review.id %}">Delete</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+    <!-- Add your review -->
+    <div class="row justify-content-md-center my-2">
+        <div class="ml-4 mr-4 col-lg-10 pt-5 allauth-form-inner-content">
+            {% if user.is_authenticated %}
+            <h4 class="text-green mb-4">Add your review</h4>
+            <form method="POST">
+                {{ form | crispy }}
+                {% csrf_token %}
+                <textarea name="review" id="review" class="form-control review-box" cols="10" rows="5" required></textarea>
+                <div class="col text-center">
+                    <button class='btn btn-sand mb-5 mt-3' type="submit">Submit Review</button>
+                    <button class='btn btn-sand mb-5 mt-3' type="reset">Reset Review</button>
+                </div>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+
 </div>
 {% endblock %}
 

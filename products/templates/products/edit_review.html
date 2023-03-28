@@ -1,0 +1,38 @@
+<!-- Edit Review Page -->
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <!-- Page Title -->        
+        <h2 class="logo-font my-4">Edit your review</h2>                
+        <hr>        
+        <div class="row justify-content-center my-5">
+            <!-- Edit review form-->
+            <div class="col-12 col-md-6">
+                <form action="{% url 'edit_review' review.id %}" method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-green rounded-1">
+                        <span>
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        Return to Product
+                    </a>
+                    <input type="submit" value="Update" class="btn btn-sand rounded-1">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
