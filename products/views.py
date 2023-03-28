@@ -174,10 +174,11 @@ def add_review(request, product_id):
     if request.method == 'POST':
         form = ProductReviewForm(request.POST)
         if form.is_valid():
-            data = Review()
+            data = ProductReview()
             data.review = form.cleaned_data['review']
             data.rating = form.cleaned_data['rating']
             data.product = product
+            data.approved = "False"
             data.user_id = request.user.id
             data.save()
             messages.success(request,

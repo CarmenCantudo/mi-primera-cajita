@@ -132,9 +132,19 @@
         <div class="col col-lg-10 text-center mt-2 mb-5">
             <div class="card">
                 <div class="card-title px-2 pt-2 pb-0">
-                    <p class="text-left mb-0 font-weight-bold">
+                    <p class="text-left mb-0 font-weight-bold float-left">
                         <span class="text-capitalize">{{ review.user }}</span> - {{review.created_on}}
                     </p>
+                    <!-- User Stars from Rathan Kumar's YouTube Tutorial https://www.youtube.com/watch?v=eIN1nZCt7Ww -->
+                    <div class="rating-star float-right">
+                        <span>
+                            <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if review.rating == 1.5 %}-half-o{% elif review.rating < 2 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if review.rating == 2.5 %}-half-o{% elif review.rating < 3 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if review.rating == 3.5 %}-half-o{% elif review.rating < 4 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if review.rating == 4.5 %}-half-o{% elif review.rating < 5 %}-o {% endif %}" aria-hidden="true"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="card-body px-2 pb-2 pt-0">
                     <p class="text-left">{{ review.review }}</p>
@@ -151,13 +161,14 @@
     </div>
     <!-- Add your review -->
     <div class="row justify-content-md-center my-2">
-        <div class="ml-4 mr-4 col-lg-10 pt-5 allauth-form-inner-content">
+        <div class="ml-4 mr-4 col-lg-10 pt-5">
             {% if user.is_authenticated %}
             <h4 class="text-green mb-4">Add your review</h4>
-            <form method="POST">
+            <form method="POST" action="{% url 'add_review' product.id %}">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <textarea name="review" id="review" class="form-control review-box" cols="10" rows="5" required></textarea>
+                <textarea name="review" id="review" class="form-control review-box" cols="10" rows="5"></textarea>
+                <!-- Rating Stars from Rathan Kumar's YouTube Tutorial https://www.youtube.com/watch?v=Zkmu93lMLPs -->
                 <div class="col py-3">
                     <div class="rate">
                         <input type="radio" name="rating" id="rating10" value="5" required checked="checked"><label for="rating10" title="5"></label>
@@ -177,6 +188,12 @@
                     <button class='btn btn-sand mb-5 mt-3' type="reset">Reset Review</button>
                 </div>
             </form>
+            {% else %}
+            <!-- User not logged in -->
+            <div class="text-coffee">
+                <p>You need to logged in to leave a review.</P>  
+                <a href="{% url 'account_login' %}" class="btn btn-sand rounded-1">Login Here</a>
+            </div>
             {% endif %}
         </div>
     </div>

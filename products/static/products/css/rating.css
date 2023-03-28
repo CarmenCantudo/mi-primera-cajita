@@ -1,4 +1,6 @@
-/* Credit: Rathan Kumar's YouTube Tutorial .*/
+/* Credit: Rathan Kumar's YouTube Tutorial 
+   https://www.youtube.com/watch?v=gDtsAWMA3Jo */
+
 /* Hide Radio button */
 .rate > input {
     display: none;
@@ -7,7 +9,7 @@
 .rate {
     display: inline-block;
     border: 0;
-    color: #1a1919;
+    color: #E9EDC9;
 }
 
 .rate > label {
@@ -35,7 +37,7 @@
 /* Click and hover */
 input:checked~label,
 label:hover~label {
-    color:#d4af37;
+    color:#6B793E;
 }
 
 /* hover highlight */
@@ -43,9 +45,9 @@ input:checked+label:hover,
 input:checked~label:hover,
 input:checked~label:hover~label,
 label:hover~input:checked~label {
-    color:#d4af37;
+    color:#B97A50;
 }
 
 .rating-star i {
-    color: #d4af37 !important;
+    color: #6B793E !important;
 }
