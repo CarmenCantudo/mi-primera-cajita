@@ -170,12 +170,11 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="container-fluid py-5 mt-4">
+    <footer class="container-fluid pt-5 pb-3 mt-4">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md">
+                <div class="col-12 col-md text-center">
                     <img class="footer-img mb-2" src="{{ MEDIA_URL }}logo-mpc.webp" alt="Mi primera cajita Logo">
-                    <small class="d-block mb-3 text-green">© 2023</small>
                 </div>
                 <div class="col-6 col-md">
                     <h5 class="text-dgreen">Products</h5>
@@ -216,6 +215,23 @@
                     </ul>
                 </div>
             </div>
+            <div class="row mt-auto pt-3">
+                <p class="m-2 text-center d-flex flex-row justify-content-center w-100">
+                    <a class="nav-link" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                        <i class="fab fa-facebook-square mx-2 social-link"></i>
+                    </a>
+                    <a class="nav-link" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+                        <i class="fab fa-twitter-square mx-2 social-link"></i>
+                    </a>
+                    <a class="nav-link" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                        <i class="fab fa-instagram-square mx-2 social-link"></i>
+                    </a>
+                    <a class="nav-link" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)">
+                        <i class="fab fa-youtube-square mx-2 social-link"></i>
+                    </a>
+                </p>
+                <p class="mb-2 text-center w-100"><small>&copy; <span id="copyright"></span><br>Mi Primera Cajita</small></p>
+            </div>
         </div>
       </footer>
 
@@ -230,9 +246,13 @@
         $('.btt-link').click(function (e) {
             window.scrollTo(0, 0)
         })
-    </script>
-    <script type="text/javascript">
+
+        
         $('.toast').toast('show');
+
+
+    // copyright year
+    $("#copyright").text(new Date().getFullYear());
     </script>
     {% endblock %}
 

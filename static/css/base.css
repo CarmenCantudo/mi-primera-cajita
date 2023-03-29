@@ -143,6 +143,11 @@ header, footer {
     width: 100px;
 }
 
+.social-link {
+    font-size: 30px;
+    color: #6B793E;
+}
+
 
 /*****************/
 /*   Home page   */
