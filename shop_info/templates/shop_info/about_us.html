@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}" />
+{% endblock %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+<div class="overlay"></div>
+<div class="container my-5">
+  <div class="row">
+    <div class="col">
+      <h2 class="logo-font my-4 text-center">About Us</h2>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-12 col-md-8">
+      <p class="">
+        Welcome to our shop! My name is Alba, and I am a mother of two wonderful
+        boys - one and four years old. As a mother, I understand how important
+        it is to have high-quality, safe, and practical products for your little
+        ones. That's why I started this business - to provide parents like you
+        with personalised baby products that not only meet your needs but also
+        reflect your unique style and personality.
+      </p>
+      <p class="">
+        I have always had a passion for design and creating things, and this
+        passion only grew stronger when I became a mother. I started making
+        personalised baby products for my own children, and soon enough, family
+        and friends were asking me to make products for their little ones too.
+        That's when I realised that there was a need for personalised baby
+        products that were both practical and stylish.
+      </p>
+      <p class="text-center">
+        <img class="mb-2 w-50" src="{{ MEDIA_URL }}logo-mpc.webp" alt="Mi primera cajita Logo">
+      </p>
+      <p class="">
+        At our shop, we believe that every child is unique, and their
+        accessories should reflect that. That's why we offer a wide range of
+        customisable products, including pacifier and teether cords, bibs,
+        muslins, and cases to store pacifiers and teethers. All our products are
+        made with love and care, and we only use high-quality, safe materials.
+      </p>
+      <p class="">
+        We understand that as a parent, you want the best for your child, and
+        that's what we strive to provide - products that are not only functional
+        but also beautiful and unique. Thank you for choosing our shop, and we
+        look forward to helping you create personalised products that you and
+        your little ones will love.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block postloadjs %} {{ block.super }}
+<script
+  type="text/javascript"
+  src="{% static 'profiles/js/countryfield.js' %}"
+></script>
+{% endblock %}
