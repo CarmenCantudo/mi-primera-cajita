@@ -8,3 +8,9 @@ def about_us(request):
     """ About us page """
 
     return render(request, 'shop_info/about_us.html')
+
+
+def privacy_policy(request):
+    """ Privacy Policy page """
+
+    return render(request, 'shop_info/privacy_policy.html')
