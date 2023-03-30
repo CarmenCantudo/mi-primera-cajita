@@ -14,3 +14,9 @@ def privacy_policy(request):
     """ Privacy Policy page """
 
     return render(request, 'shop_info/privacy_policy.html')
+
+
+def cookie_policy(request):
+    """ Cookie Policy page """
+
+    return render(request, 'shop_info/cookie_policy.html')
