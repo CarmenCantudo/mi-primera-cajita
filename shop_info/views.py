@@ -20,3 +20,9 @@ def cookie_policy(request):
     """ Cookie Policy page """
 
     return render(request, 'shop_info/cookie_policy.html')
+
+
+def terms(request):
+    """ Cookie Policy page """
+
+    return render(request, 'shop_info/terms.html')
