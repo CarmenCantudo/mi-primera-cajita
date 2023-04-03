@@ -1,0 +1,310 @@
+{% extends "base.html" %} {% load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}" />
+{% endblock %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+<div class="overlay"></div>
+<div class="container my-5">
+  <div class="row">
+    <div class="col">
+      <h1 class="logo-font my-4 text-center">Ask us anything!</h1>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-12 col-md-8">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left faqs-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fa-regular fa-circle-question"></i> Why should I choose your products over others on the market?
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Our products are handmade with high-quality materials, personalized to your liking, and made with safety in mind.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fa-regular fa-circle-question"></i> Is Mi Primera Cajita a safe brand?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Yes, safety is our top priority. We use non-toxic materials, and all our products comply with safety regulations.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-regular fa-circle-question"></i> Is it possible that the balls of my products come out?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              No, our products are designed to prevent choking hazards. However, if you notice any defects, please contact us immediately.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="fa-regular fa-circle-question"></i> Are the pacifier clips safe and resistant?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              Yes, our pacifier clips are safe and durable. We use strong materials to ensure that they will not break or come apart.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="fa-regular fa-circle-question"></i> Are all the products sustainable and ecofriendly?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+              We strive to be environmentally conscious and use sustainable materials whenever possible. However, some of our materials may not be fully eco-friendly.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <i class="fa-regular fa-circle-question"></i> How often should I inspect the products?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+              We recommend that you inspect your products regularly to ensure that they are in good condition and free of defects.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingSeven">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <i class="fa-regular fa-circle-question"></i> How often should I replace my products?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="card-body">
+              It depends on the product and its usage. We recommend replacing pacifier clips every six months to ensure that they are safe and effective.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingEight">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <i class="fa-regular fa-circle-question"></i> How can I clean my products?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="card-body">
+              You can clean our products with warm water and mild soap. Please avoid using harsh chemicals or abrasive materials.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingNine">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                <i class="fa-regular fa-circle-question"></i> How can I take care of my products so that they are better preserved?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+            <div class="card-body">
+              We recommend storing our products in a dry, cool place, away from direct sunlight. Avoid exposing them to extreme temperatures or moisture.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingTen">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                <i class="fa-regular fa-circle-question"></i> What kind of pacifier do you recommend for my baby?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+            <div class="card-body">
+              We recommend consulting with your pediatrician to determine the best pacifier for your baby. Our pacifier clips are compatible with most pacifiers.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingEleven">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                <i class="fa-regular fa-circle-question"></i> What is the manufacturing time of an order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+            <div class="card-body">
+              The manufacturing time varies depending on the product and customisation options. Please refer to the product page for estimated manufacturing times.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="headingTwelve">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                <i class="fa-regular fa-circle-question"></i> Once my order is prepared, what is the delivery time?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+            <div class="card-body">
+              Delivery times depend on the shipping method selected during checkout. Please refer to our shipping policy for estimated delivery times.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading13">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                <i class="fa-regular fa-circle-question"></i> What prices are the shipments?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
+            <div class="card-body">
+              Shipping prices vary depending on the destination and shipping method. Please refer to our shipping policy for more information.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading14">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                <i class="fa-regular fa-circle-question"></i> Do you have free shipping?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
+            <div class="card-body">
+              We offer free shipping on orders over €50. Please refer to our shipping policy for details.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading15">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                <i class="fa-regular fa-circle-question"></i> Do you offer any discount on my first purchase?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
+            <div class="card-body">
+              Yes, we offer a discount on your first purchase. Please refer to our promotions page for more information.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading16">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                <i class="fa-regular fa-circle-question"></i> I have just placed an order on the web, what is the next step?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordionExample">
+            <div class="card-body">
+              Once your order is processed, we will send you a confirmation email with your order details and estimated delivery date.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading17">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                <i class="fa-regular fa-circle-question"></i> I have placed an order on the web, but I have not received the confirmation email, what should I do?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordionExample">
+            <div class="card-body">
+              Please check your spam folder or contact us if you have not received a confirmation email within 24 hours of placing your order.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading18">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                <i class="fa-regular fa-circle-question"></i> What happens if my order was sent back to Mi Primera Cajita due to delivery problems?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordionExample">
+            <div class="card-body">
+              We will contact you to resolve any delivery issues and arrange for your order to be re-shipped if necessary.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading19">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                <i class="fa-regular fa-circle-question"></i> What to do if we want to return our order?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordionExample">
+            <div class="card-body">
+              Please refer to our return policy for information on how to initiate a return.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header btn-outline-green" id="heading20">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed faqs-btn" type="button" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                <i class="fa-regular fa-circle-question"></i> What happens if the product is defective?
+              </button>
+            </h2>
+          </div>
+          <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordionExample">
+            <div class="card-body">
+              If you receive a defective product, please contact us immediately, and we will arrange for a replacement or refund.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block postloadjs %} {{ block.super }}
+<script
+  type="text/javascript"
+  src="{% static 'profiles/js/countryfield.js' %}"
+></script>
+{% endblock %}

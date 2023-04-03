@@ -26,3 +26,9 @@ def terms(request):
     """ Cookie Policy page """
 
     return render(request, 'shop_info/terms.html')
+
+
+def faqs(request):
+    """ Cookie Policy page """
+
+    return render(request, 'shop_info/faqs.html')

@@ -405,6 +405,18 @@ input[name='q']::placeholder {
 	color: #83944C; /* text-info */
 }
 
+/********************/
+/**** INFO PAGES ****/
+/********************/
+
+/* Faqs */
+.faqs-btn {
+    outline: none !important;
+    box-shadow: none !important;
+    color: #83944C;
+}
+
+
 
 /* -------------------------------- Media Queries */
 
