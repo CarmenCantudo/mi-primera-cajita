@@ -189,6 +189,27 @@ header, footer {
     background-color: rgb(204, 213, 174, 74%);
 }
 
+.content-container {
+    padding-bottom: 35px;
+}
+
+.intro-text {
+    font-size: large;
+}
+
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
 
 /*****************/
 /* Products page */
