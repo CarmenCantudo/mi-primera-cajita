@@ -58,8 +58,12 @@ This is an e-commerce website selling personalised baby products (cord for the p
 ##### Navigation & Viewing
 The website has a user-friendly navigation system that allows customers to easily browse and search for products. They can view products in list form and see detailed product descriptions, including customer reviews, to make informed purchasing decisions.
 
+![Home page](static/testing/home.png)
+
 ##### Purchasing & Checkout
 Customers can add products to their cart, select product size and quantity, and securely checkout using various payment options. They receive confirmation of their order and a confirmation email after checkout.
+
+![Purchasing & Checkout page](static/testing/home.png)
 
 ##### Searching & Sorting
 Customers can search for products by name, category, or keyword and sort them by price, popularity, or other filters.
@@ -110,19 +114,19 @@ Users can register for an account and create a profile where they can manage the
 
 - Register page
 
-![Register page](static/testing/register.png)
+![Register page](static/testing/accounts-signup.png)
 
 - Login page
   
-![Login page](static/testing/login.png)
+![Login page](static/testing/accounts-login.png)
 
 - Logout page
 
-![Logout page](static/testing/logout.png)
+![Logout page](static/testing/accounts-logout.png)
 
 - Profile page
 
-![Profile page](static/testing/.png)
+![Profile page](static/testing/accounts-profile.png)
 
 </details>
 
@@ -135,13 +139,9 @@ Users can register for an account and create a profile where they can manage the
 
 #### Store Owner Add Products Page
 
-![](static/testing/.png)
+![](static/testing/products-management.png)
 
-#### Store Owner Edit Products Page
-
-![](static/testing/.png)
-
-#### Store Owner Delete Products Page
+#### Store Owner Edit/Delete Products Page
 
 ![](static/testing/.png)
 
@@ -159,7 +159,7 @@ Users can register for an account and create a profile where they can manage the
 
 ### Future Features
 
-In the future, we plan to add more products to our inventory, including personalized baby blankets and clothing. We also plan to offer gift wrapping options for customers who wish to purchase items as gifts. Additionally, we will continue to improve our website's user interface and security features to provide the best possible online shopping experience for our customers.
+In the future, we plan to add more products to our inventory, including personalised baby blankets and clothing. We also plan to offer gift wrapping options for customers who wish to purchase items as gifts. Additionally, we will continue to improve our website's user interface and security features to provide the best possible online shopping experience for our customers.
 
 [Back to top](#my-first-box)
 
@@ -181,7 +181,7 @@ The Agile Methodology was used to plan and manage this project. Epics and Issues
 
 The colour scheme for the design of the website is based in warn nature colours.
 
-![Image Colours](/static/testing/.png)
+![Image Colours](/static/testing/palette.png)
 
 ### Flow Diagram
 
