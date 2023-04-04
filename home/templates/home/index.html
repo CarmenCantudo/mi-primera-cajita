@@ -58,52 +58,67 @@
   <div class="row text-center">
     <p class="intro-text mb-5">At Mi Primera Cajita, we understand the importance of having peace of mind when it comes to your child's safety. That's why we use only the best, non-toxic materials in all of our products. We want you to feel confident that you're making the right choice for your child and the environment.</p>
     <div class="col-12 col-md-4 col-lg-3 mb-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}logo-mpc.webp" height="140" width="140" />
-      </svg>
-      <h3>All Products</h3>
+      <a class="cat-link" href="{% url 'products' %}">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}logo-mpc.webp" height="140" width="140" />
+        </svg>
+        <h3>All Products</h3>
+      </a>
     </div>
     <div class="col-12 col-md-4 col-lg-3 mb-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}muslin-blue-green-rainbows.webp" height="140" width="140" />
-      </svg>
-      <h3>Muslins</h3>
+      <a class="cat-link" href="{% url 'products' %}?category=cotton_muslins,cotton_bamboo_muslins,premium_soft_muslins">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}muslin-blue-green-rainbows.webp" height="140" width="140" />
+        </svg>
+        <h3>Muslins</h3>
+      </a>
     </div>
     <div class="col-12 col-md-4 col-lg-3 mb-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}personalised-pacifier-chain-blue.webp" height="140" width="140" />
-      </svg>
-      <h3>Pacifier chains</h3>
+      <a class="cat-link" href="{% url 'products' %}?category=mini_pacifier_chains,personalised_pacifier_chains">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}personalised-pacifier-chain-blue.webp" height="140" width="140" />
+        </svg>
+        <h3>Pacifier chains</h3>
+      </a>
     </div>
     <div class="col-12 col-md-4 col-lg-3 mb-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}personalised-holder-cases.webp" height="140" width="140" />
-      </svg>
-      <h3>Pacifier cases</h3>
+      <a class="cat-link" href="{% url 'products' %}?category=pacifier_holder_case">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}pacifier-holder-cases.webp" height="140" width="140" />
+        </svg>
+        <h3>Pacifier cases</h3>
+      </a>
     </div>
     <div class="col-12 col-md-4 col-lg-3 mb-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}teether-moon.webp" height="140" width="140" />
-      </svg>
-      <h3>Teethers</h3>
+      <a class="cat-link" href="{% url 'products' %}?category=stroller_chain_teethers,teether_toy_figures">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}teether-moon.webp" height="140" width="140" />
+        </svg>
+        <h3>Teethers</h3>
+      </a>
     </div>
     <div class="col-12 col-md-4 col-lg-3 mb-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}bibs.webp" height="140" width="140" />
-      </svg>
-      <h3>Bibs</h3>
+      <a class="cat-link" href="{% url 'products' %}?category=bibs">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}bibs.webp" height="140" width="140" />
+        </svg>
+        <h3>Bibs</h3>
+      </a>
     </div>
     <div class="col-12 col-md-4 col-lg-3 mb-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}keyrings.webp" height="140" width="140" />
-      </svg>
-      <h3>Personalised Keyrings</h3>
+      <a class="cat-link" href="{% url 'products' %}?category=personalised_keyrings">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}keyrings.webp" height="140" width="140" />
+        </svg>
+        <h3>Personalised Keyrings</h3>
     </div>
     <div class="col-12 col-md-4 col-lg-3">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <image href="{{ MEDIA_URL }}bracelets.webp" height="140" width="140" />
-      </svg>
-      <h3>Bracelets</h3>
+      <a class="cat-link" href="{% url 'products' %}?category=bracelets">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <image href="{{ MEDIA_URL }}bracelets.webp" height="140" width="140" />
+        </svg>
+        <h3>Bracelets</h3>
+      </a>
     </div>
     <p class="intro-text text-center mt-5">We are committed to providing exceptional customer service and ensuring that your experience with us is nothing short of amazing. If you have any questions, our friendly customer support team is always ready to assist you.</p>
     <p class="intro-text text-center">Thank you for choosing Mi Primera Cajita. We can't wait to help you on your parenting journey with our sustainable and eco-friendly products.</p>
