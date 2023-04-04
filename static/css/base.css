@@ -138,6 +138,10 @@ header, footer {
     background-color: #CCD5AE;
 }
 
+a.cat-link {
+    color: #6B793E;
+}
+
 /* Footer */
 .footer-img {
     width: 100px;
@@ -147,6 +151,21 @@ header, footer {
     font-size: 30px;
     color: #6B793E;
 }
+
+.social-link:hover {
+    box-shadow: 4px 4px 3px 1px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+/* MailChimp Sucribe Form */
+#mc-embedded-subscribe{
+    border: none;
+}
+
+#mc_embed_signup .helper_text {
+    background-color: #E9EDC9 !important;
+}
+
 
 
 /*****************/
@@ -488,6 +507,10 @@ input[name='q']::placeholder {
     .collapse-menu {
         display: flex;
         align-self: flex-start;
+    }
+
+    ul .navbar-nav {
+        text-align: center !important;
     }
     
     .nav-flex {
