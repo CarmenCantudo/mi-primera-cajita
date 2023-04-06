@@ -8,4 +8,5 @@ urlpatterns = [
     path('cookie_policy/', views.cookie_policy, name='cookie_policy'),
     path('terms/', views.terms, name='terms'),
     path('faqs/', views.faqs, name='faqs'),
+    path('contact_us/', views.contact_us, name='contact_us'),
 ]
