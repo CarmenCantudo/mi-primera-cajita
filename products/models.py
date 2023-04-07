@@ -34,6 +34,8 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     available = models.BooleanField(default=True)
+    rating = models.DecimalField(max_digits=7, decimal_places=2, null=True,
+                                 blank=True)
     favourites = models.ManyToManyField(User, related_name='favourites',
                                         blank=True)
     created_on = models.DateTimeField(auto_now_add=True, blank=True, null=True)
@@ -46,6 +48,13 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def num_of_reviews(self):
+        return ProductReview.objects.filter(product=self).count()
+
+    def average_rating(self):
+        from django.db.models import Avg
+        return ProductReview.objects.filter(product=self).aggregate(Avg('rating'))['rating__avg']  # noqa
 
 
 class ProductReview(models.Model):
