@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font my-4 text-green"><i class="fa-solid fa-baby"></i> Mi Primera Cajita News <i class="fa-solid fa-baby-carriage"></i></h2>
+            <h4 class="text-green text-center">Popular Articles</h4>
+        </div>
+        <!-- Articles -->
+        <div class="container offset-1">
+            <hr>
+            <div class="row">
+                {% for article in news %}
+                <!-- Article Details -->
+                <div class="col-auto col-md-6 mt-5">
+                    <div class="card h-100">
+                        <!-- Article Image-->
+                        {% if article.image %}
+                        <a href="{% url 'news_details' article.slug %}">
+                            <img class="card-img-top img-responsive" src="{{ article.image.url }}" alt="{{ article.title }}">
+                        </a>
+                        {% endif %}
+                        <!-- Article Title -->
+                        <div class="card-body pb-0">
+                            <p class="mb-0 text-center"><strong>{{ article.title }}</strong></p>
+                        </div>
+                        <hr>                            
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">                                    
+                                {% if request.user.is_superuser %}
+                                <!-- Edit and Delete buttons is user is Superuser -->
+                                <div class="col">
+                                    <a href="{% url 'edit_news' article.slug %}" class="btn btn-outline-green rounded-0 mt-5">Edit <i class="fa-solid fa-pencil"></i></a>
+                                </div>
+                                <div class="col text-right">
+                                    <button type="button" class="btn btn-sand rounded-0 mt-5" data-toggle="modal" data-target="#deleteModal">Delete <i class="fa-solid fa-trash-can"></i></button>
+                                </div>
+                                <!-- Delete Confirmation Modal -->
+                                <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class="container d-flex pl-0"><h5 class="modal-title ml-2 text-green" id="deleteModalLabel">Delete Article</h5></div>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-danger">The article <strong>{{ article.slug }}</strong> will be deleted forever! Are you sure you want to proceed?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-green" data-dismiss="modal">Cancel</button>
+                                                <a class="btn btn-danger my-3 mr-2" href="{% url 'delete_news' article.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                
+                                {% endif %}                                                                       
+                            </div>
+                            <!-- Read More Button -->
+                            <div class="col text-center">
+                                <a class="btn-sm mt-4 mr-2 text-green" href="{% url 'news_details' article.slug %}">Read More <i class="fa-solid fa-book-open-reader"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -457,6 +457,17 @@ input[name='q']::placeholder {
 }
 
 
+/********************/
+/**** NEWS PAGES ****/
+/********************/
+
+/* News */
+.delete-news {
+    background-color: transparent;
+    border: none;
+}
+
+
 
 /* -------------------------------- Media Queries */
 
