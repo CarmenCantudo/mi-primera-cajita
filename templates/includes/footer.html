@@ -1,0 +1,114 @@
+<footer class="container-fluid pt-5 pb-3 mt-4">
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="container quotes-container content-container">
+              <section class="footer">
+                <div class="row">
+                  <div class="col-12 page-header mb-4">
+                    <h2 class="text-uppercase text-green text-center">Stay in touch:</h2>
+                    <hr class="block-divider block-divider--short">
+                  </div>
+               </div>
+               <div class="row">
+                 <div class="col-12 col-md-6">
+                    <h3>Social</h3>
+                    <p>Keep up to date with all our latest offers!</p>
+                    <p class="m-2 text-center d-flex flex-row">
+                        <a class="nav-link" href="https://www.facebook.com/profile.php?id=100091235366599" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                            <i class="fab fa-facebook-square mx-2 social-link"></i>
+                        </a>
+                        <a class="nav-link" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+                            <i class="fab fa-twitter-square mx-2 social-link"></i>
+                        </a>
+                        <a class="nav-link" href="https://www.instagram.com/miprimeracajita/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                            <i class="fab fa-instagram-square mx-2 social-link"></i>
+                        </a>
+                        <a class="nav-link" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)">
+                            <i class="fab fa-youtube-square mx-2 social-link"></i>
+                        </a>
+                    </p>
+                 </div>
+                 <div class="col-12 col-md-6">
+                   <h2>Subscribe!</h2>
+                   <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter!</p>
+                   <!-- Begin Mailchimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form action="https://herokuapp.us13.list-manage.com/subscribe/post?u=ba23803f9c5742d000642db44&amp;id=379ca4c673&amp;f_id=009a96e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                    </label>
+                        <input type="email" value="" name="EMAIL" class="required email w-100" id="mce-EMAIL" required>
+                        <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                    </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ba23803f9c5742d000642db44_379ca4c673" tabindex="-1" value=""></div>
+                            <div class="optionalParent">
+                                <div class="clear foot">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-sand my-2 mr-2 p-2">
+                                    <p class="brandingLogo m-0"><a href="http://eepurl.com/ionEHI" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <!--End mc_embed_signup-->
+                 </div>
+               </div>
+               <hr>
+             </section>
+           </div>
+          </div>
+        <div class="row">
+            <div class="col-12 col-md text-center">
+                <img class="footer-img mb-2" src="{{ MEDIA_URL }}logo-mpc.webp" alt="Mi primera cajita Logo">
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="text-dgreen">Products</h5>
+                <ul class="list-unstyled text-small">
+                <li><a class="text-green" href="{% url 'products' %}?category=cotton_muslins,cotton_bamboo_muslins,premium_soft_muslins"
+                    class="dropdown-item">Muslins</a></li>
+                <li><a class="text-green" href="{% url 'products' %}?category=mini_pacifier_chains,personalised_pacifier_chains,pacifier_holder_case"
+                    class="dropdown-item">Pacifiers</a></li>
+                <li><a class="text-green" href="{% url 'products' %}?category=stroller_chain_teethers,teether_toy_figures"
+                    class="dropdown-item">Teethers</a></li>
+                <li><a class="text-green" href="{% url 'products' %}?category=bibs,breastfeeding_necklaces,personalised_keyrings,bracelets"
+                    class="dropdown-item">More Pretty Things</a></li>
+                <li><a class="text-green" href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="text-dgreen">My Account</h5>
+                <ul class="list-unstyled text-small">
+                    {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <li><a class="text-green" aria-label="Go to the product management Add Products page" href="{% url 'add_product' %}">Add Product</a></li>
+                        <li><a class="text-green" aria-label="Go to the news management Add Article page" href="{% url 'add_news' %}">Add News Article</a></li>            
+                        {% endif %}
+                    <li><a class="text-green" href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
+                    <li><a class="text-green" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                    {% else %}
+                    <li><a class="text-green" href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                    <li><a class="text-green" href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="text-dgreen">Info</h5>
+                <ul class="list-unstyled text-small">
+                <li><a class="text-green" href="{% url 'about_us' %}">About Us</a></li>
+                <li><a class="text-green" href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
+                <li><a class="text-green" href="{% url 'cookie_policy' %}">Cookie Policy</a></li>
+                <li><a class="text-green" href="{% url 'terms' %}">Terms</a></li>
+                <li><a class="text-green" href="{% url 'faqs' %}">Faqs</a></li>
+                </ul>
+            </div>
+            <p class="my-2 text-center w-100"><small>Mi Primera Cajita &copy; <span id="copyright"></span></small></p>
+        </div>
+
+    </div>
+</footer>
