@@ -275,6 +275,11 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.card-img-top {
+    height: 220px;
+    width: auto;
+}
+
 
 /*****************/
 /* Products Form */
