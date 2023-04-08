@@ -25,11 +25,11 @@
                 {% for article in news %}
                 <!-- Article Details -->
                 <div class="col-auto col-md-6 mt-5">
-                    <div class="card h-100">
+                    <div class="card h-100 text-center">
                         <!-- Article Image-->
                         {% if article.image %}
                         <a href="{% url 'news_details' article.slug %}">
-                            <img class="card-img-top img-responsive" src="{{ article.image.url }}" alt="{{ article.title }}">
+                            <img class="img-responsive w-75" src="{{ article.image.url }}" alt="{{ article.title }}">
                         </a>
                         {% endif %}
                         <!-- Article Title -->
