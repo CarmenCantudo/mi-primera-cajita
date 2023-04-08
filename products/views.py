@@ -67,17 +67,17 @@ def product_detail(request, product_id):
     from Code Institute Boutique Ado
     """
     product = get_object_or_404(Product, pk=product_id)
-    favourite = False
+    add_favourite = False
     reviews = ProductReview.objects.filter(product_id=product.id).order_by('-created_on')  # noqa
     ratings = ProductReview.objects.all().aggregate(Avg('rating'))
     total_reviews = reviews.count()
 
     if product.favourites.filter(id=request.user.id).exists():
-        favourite = True
+        add_favourite = True
 
     context = {
         'product': product,
-        'favourite': favourite,
+        'add_favourite': add_favourite,
         'reviews': reviews,
         'ratings': ratings,
         'total_reviews': total_reviews,

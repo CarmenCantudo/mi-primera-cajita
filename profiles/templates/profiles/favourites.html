@@ -1,0 +1,78 @@
+<!--Favourites Page-->
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font my-4">Favourites</h2>
+        </div>
+    </div>
+    <hr>
+    <!--Favourite Products-->
+    <div class="product-container col-10 offset-1">
+      <div class="row">
+        {% for product in add_favourite %}
+          <div class="text-center col-sm-6 col-md-6 col-lg-4 col-xl-3 my-5">
+            <!--Displays Favourite Products-->
+            <div class="card h-100">
+              <!--Product Image-->
+              {% if product.image %}
+              <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"/>
+              </a>
+              {% else %}
+              <!--Product No image -->
+              <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"/>
+              </a>
+              {% endif %}
+              <!-- Product Name -->
+              <div class="card-body pb-0">
+              <p class="mb-1 text-center"><strong>{{ product.name }}</strong></p>
+              </div>
+              <div class="card-footer bg-white pt-0 border-0 text-left">
+                <div class="row">
+                  <div class="col">
+                      <!-- Product Price -->
+                      <p class="lead mb-0 text-left"><strong>€ {{ product.price }}</strong></p>
+                      <!-- Product Category -->
+                      {% if product.category %}
+                      <p class="small mt-1 mb-2">
+                          <a class="text-green" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fa-solid fa-tags mr-2"></i>{{ product.category.friendly_name }}
+                          </a>
+                      </p>
+                      {% endif %}
+                  </div>                                        
+                </div>
+                <!-- Remove product from favourite and go back to the product -->
+                <div class="text-center">                 
+                    <a class="text-danger" href="{% url 'favourites' product.id %}">
+                      <i class="fas fa-heart fa-lg text-danger"></i> <small>Remove</small>
+                    </a>                 
+                </div>
+              </div>                
+            </div>  
+          </div>
+          <!--If no favourites-->
+          {% empty %}
+          <div class="text-green my-5">
+            You have not added any products to your favorites yet.
+          </div> 
+        {% endfor %}                           
+      </div>           
+    </div>        
+  </div> 
+</div>
+</section>
+{% endblock %}

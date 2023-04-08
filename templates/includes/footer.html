@@ -90,6 +90,7 @@
                         <li><a class="text-green" aria-label="Go to the news management Add Article page" href="{% url 'add_news' %}">Add News Article</a></li>            
                         {% endif %}
                     <li><a class="text-green" href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
+                    <li><a class="text-green" href="{% url 'favourites' %}" class="dropdown-item">My Favourites</a></li>
                     <li><a class="text-green" href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
                     {% else %}
                     <li><a class="text-green" href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>

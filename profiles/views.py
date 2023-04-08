@@ -1,10 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
+from products.models import Product
 
 
 @login_required
@@ -52,3 +53,31 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def favourites(request, product_id):
+    """
+    Add/Remove a product to favourites
+    """
+    product = get_object_or_404(Product, pk=product_id)
+
+    if product.favourites.filter(id=request.user.id).exists():
+        product.favourites.remove(request.user)
+    else:
+        product.favourites.add(request.user)
+
+    return redirect(reverse('product_detail', args=[product.id]))
+
+
+def favourite_list(request):
+    """
+    Favourite Products List Page
+    """
+    user = request.user
+    favourite_products = user.favourites.all()
+
+    context = {
+        'add_favourite': favourite_products
+    }
+
+    return render(request, 'profiles/favourites.html', context)
