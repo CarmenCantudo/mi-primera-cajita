@@ -139,7 +139,7 @@
     {% for article in news %}
     <!-- Article Details -->
     <div class="col-auto col-md-3 mt-5">
-        <div class="card home-news h-100">
+        <div class="card home-news h-100 text-center">
             <!-- Article Image-->
             {% if article.image %}
             <a href="{% url 'news_details' article.slug %}">
