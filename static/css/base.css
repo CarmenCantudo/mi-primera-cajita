@@ -229,6 +229,11 @@ a.cat-link {
     width: 35px;
 }
 
+.home-news {
+    border: 1px solid #6B793E;
+    color: #6B793E !important;
+}
+
 
 /*****************/
 /* Products page */
