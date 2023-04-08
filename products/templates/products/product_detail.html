@@ -89,7 +89,6 @@
                             </select>
                         </div>
                         {% endif %}
-                        {% endif %}
                         <!-- Product Quantity -->
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
@@ -139,12 +138,12 @@
     <!-- Users Reviews -->
     <div class="row my-2 justify-content-md-center">
         {% if reviews %}
-        {% for review in reviews %}
-        {% if review.approved %}
         <div class="col col-lg-10">
             <!-- Number of Reviews -->
             <h4 class="text-green">Reviews ({{total_reviews}})</h4>
         </div>
+        {% for review in reviews %}
+        {% if review.approved %}
         <div class="col col-lg-10 text-center mt-2 mb-5">
             <div class="card">
                 <div class="card-title px-2 pt-2 pb-0">
@@ -171,12 +170,12 @@
                 </div>
             </div>
         </div>
+        {% endif %}
+        {% endfor %}
         {% else %}
         <div class="col col-lg-10">
             <h4 class="text-green">No reviews yet.</h4>
         </div>
-        {% endif %}
-        {% endfor %}
         {% endif %}
     </div>
     <!-- Add your review -->
