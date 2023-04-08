@@ -68,8 +68,11 @@ def product_detail(request, product_id):
     A view to show individual product details
     from Code Institute Boutique Ado
     """
-    return HttpResponse(product_id)
+    print('----------------------')
     product = get_object_or_404(Product, pk=product_id)
+    print('----------------------')
+    return HttpResponse(product)
+    print('----------------------')
     add_favourite = False
     reviews = ProductReview.objects.filter(product_id=product.id).order_by('-created_on')  # noqa
     ratings = ProductReview.objects.all().aggregate(Avg('rating'))
