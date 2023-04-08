@@ -43,7 +43,7 @@
                 {% endif %}
                 {% if ratings %}
                 {% for values in ratings.values %}
-                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ values }} / 5</small>
+                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ values|floatformat }} / 5</small>
                 {% endfor %}
                 {% else %}
                 <small class="text-muted">No Rating</small>
@@ -73,6 +73,12 @@
                                 <option value="grey">Grey</option>
                                 <option value="balck">Black</option>
                             </select>
+                        </div>
+                        {% endif %}
+                        <!-- Personalisation -->
+                        {% if product.custom %}
+                        <div class="col-12">
+                            <textarea name="custom" id="custom" cols="10" rows="1"></textarea>
                         </div>
                         {% endif %}
                         <!-- Product Quantity -->
