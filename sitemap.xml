@@ -9,252 +9,287 @@
 
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/accounts/login/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/bag/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=cotton_muslins</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=cotton_bamboo_muslins</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=premium_soft_muslins</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=cotton_muslins,cotton_bamboo_muslins,premium_soft_muslins</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=mini_pacifier_chains</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=personalised_pacifier_chains</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=pacifier_holder_case</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=mini_pacifier_chains,personalised_pacifier_chains,pacifier_holder_case</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=stroller_chain_teethers</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=teether_toy_figures</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=stroller_chain_teethers,teether_toy_figures</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=bibs</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=breastfeeding_necklaces</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=personalised_keyrings</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=bracelets</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/?category=bibs,breastfeeding_necklaces,personalised_keyrings,bracelets</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/news/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/shop_info/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/shop_info/contact_us/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/shop_info/privacy_policy/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/shop_info/cookie_policy/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/shop_info/terms/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/shop_info/faqs/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/products/?category=mini_pacifier_chains,personalised_pacifier_chains</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/21/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/15/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mi-primera-cajita.herokuapp.com/products/24/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/18/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/products/24/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/22/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/3/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/5/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mi-primera-cajita.herokuapp.com/products/6/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mi-primera-cajita.herokuapp.com/products/4/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/16/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/products/6/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/products/4/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/7/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/8/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/9/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/10/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/products/25/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/2/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/17/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/1/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mi-primera-cajita.herokuapp.com/products/13/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mi-primera-cajita.herokuapp.com/products/12/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/11/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/products/12/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/products/13/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mi-primera-cajita.herokuapp.com/products/14/</loc>
-  <lastmod>2023-04-03T12:05:51+00:00</lastmod>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/news/new-box-composition-muslin-luca-teepee/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/news/the-importance-of-safety-in-baby-accessories/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mi-primera-cajita.herokuapp.com/news/personalised-pacifier-holders-the-ideal-accessory-for-creche/</loc>
+  <lastmod>2023-04-08T17:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
