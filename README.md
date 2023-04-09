@@ -434,6 +434,11 @@ Users can register for an account and create a profile where they can manage the
 
 In the future, we plan to add more products to our inventory, including personalised baby blankets and clothing. We also plan to offer gift wrapping options for customers who wish to purchase items as gifts. Additionally, we will continue to improve our website's user interface and security features to provide the best possible online shopping experience for our customers.
 
+- Customise Products with names.
+- Implement Comments in Articles.
+- Add additional product images.
+- Product Image to Expand on Hover Over.
+
 [Back to top](#mi-primera-cajita)
 
 ## UX
@@ -1132,6 +1137,44 @@ During the development of this app, manual testing was carried out for all epics
 | -------------- | --------------- | -------- | --------- |
 | Cancel Button  | Go to News Page | Click on | &check;   |
 | Delete Article | Delete Article  | Click on | &check;   |
+
+</details>
+
+### Validator Testing
+
+#### HTML - W3C Html Validator
+
+<details>
+  <summary>No Errors Found</summary>
+
+![W3C Html Validator](W3C_Html_Validator.jpg)
+
+</details>
+
+#### CSS - W3C CSS Validator
+
+<details>
+  <summary>No Errors Found</summary>
+
+![W3C Css Validator](W3C_Css_Validator.jpg)
+
+</details>
+
+#### Python - Pep8ci CI Python Linter
+
+<details>
+  <summary>No Errors Found</summary>
+
+![Pep8ci CI Python Linter](python_inter.jpg)
+
+</details>
+
+#### Lighthouse
+
+<details>
+  <summary>Lighthouse</summary>
+
+![Lighthouse](lighthouse.jpg)
 
 </details>
 
