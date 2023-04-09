@@ -21,17 +21,17 @@
     </div>
     <div class="container">
     <!-- Full article details -->
-        <div class="row justify-content-center">
-            <div class="col-md-6">
+        <div class="row justify-content-center my-4">
+            <div class="col-md-6 text-center mb-4">
                 <!-- Article Image -->
                 {% if news.image %}
                 <a href="{% url 'news_details' news.slug %}">
-                    <img class="card-img-top img-responsive" src="{{ news.image.url }}" alt="{{ news.title }}">
+                    <img class="w-75 img-responsive" src="{{ news.image.url }}" alt="{{ news.title }}">
                 </a>
                 {% endif %}
             </div>
             <!-- Article Content -->
-            <div class="col-md-6 text-center">
+            <div class="col-md-6">
                 <h4 class="text-green">{{ news.title }}</h4>   
                 {% if request.user.is_superuser %}
                     <small class="ml-3">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-green" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-danger my-4 mr-4" href="{% url 'delete_news' news.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
+                            <a class="btn btn-sand my-4 mr-4" href="{% url 'delete_news' news.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
                         </div>
                     </div>
                 </div>
