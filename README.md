@@ -1,6 +1,6 @@
 # Mi Primera Cajita
 
-![Responsive web image](assets/testing/am-i-responsive.jpg)
+![Responsive web image](static/testing/am-i-responsive.jpg)
 
 The Live Website can be accessed [HERE!](https://mi-primera-cajita.herokuapp.com/)
 
@@ -71,7 +71,12 @@ ZIP: 42424
 
 #### Home Page
 
+<details>
+  <summary>Home Page</summary>
+
 ![Home page](static/testing/home.png)
+
+</details>
 
 ##### Navigation & Viewing
 
@@ -785,9 +790,358 @@ During the development of this app, manual testing was carried out for all epics
 <details>
   <summary>Follow Us</summary>
 
+| Feature        | Expect               | Action   | Pass/Fail  |
+|----------------|----------------------|----------|------------|
+| Facebook Icon  | Link open in new tab | Click on | &check;    |
+| Twitter Icon   | Link open in new tab | Click on | &check;    |
+| Instagram Icon | Link open in new tab | Click on | &check;    |
+| YouTube Icon   | Link open in new tab | Click on | &check;    |
+
+</details>
+
+<details>
+  <summary>Subscribe - Mail Chimp</summary>
+
+| Feature              | Expect                                 | Action   | Pass/Fail |
+| -------------------- | -------------------------------------- | -------- | --------- |
+| Email Address        | Input email address                    | Type     | &check;   |
+| Subscribe Button     | Click to submit form                   | Click on | &check;   |
+| Mail Chimp image     | Link in new tab                        | Click on | &check;   |
+| Subscription message | Shows thank you message after clicking | -        | &check;   |
+| MailChimp            | Receive a welcome email                | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>Footer menu</summary>
+
+| Feature            | Expect                       | Action   | Pass/Fail |
+| ------------------ | ---------------------------- | -------- | --------- |
+| Muslins            | Go to All Muslins Page       | Click on | &check;   |
+| Pacifiers          | Go to All Pacifiers Page     | Click on | &check;   |
+| Teethers           | Go to All Teethers Page      | Click on | &check;   |
+| More Pretty Things | Go to All Pretty Things Page | Click on | &check;   |
+| All Products       | Go to All Products Page      | Click on | &check;   |
+| Account Register   | Go to Sign up Page           | Click on | &check;   |
+| Account Login      | Go to Sign in Page           | Click on | &check;   |
+| Add Product        | Go to Add Product Page       | Click on | &check;   |
+| Add News Article   | Go to Add Article Page       | Click on | &check;   |
+| My Profile         | Go to Profile Page           | Click on | &check;   |
+| My Favourites      | Go to My Favourites Page     | Click on | &check;   |
+| Account Logout     | Go to Logout Page            | Click on | &check;   |
+| About Us           | Go to About Us Page          | Click on | &check;   |
+| Contact Us         | Go to Contact Us Page        | Click on | &check;   |
+| Privacy Policy     | Go to Privacy Policy Page    | Click on | &check;   |
+| Cookie Policy      | Go to Cookie Policy Page     | Click on | &check;   |
+| Terms              | Go to Terms Page             | Click on | &check;   |
+| Faqs               | Go to Faqs Page              | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>All pages</summary>
+  
+| Feature                  | Expect            | Action   | Pass/Fail |
+|--------------------------|-------------------|----------|-----------|
+| Back to Top Arrow Button | Go to top of page | Click on | &check;   |
+
+</details>
+
+#### Home
+
+<details>
+  <summary>Home</summary>
+
+| Feature                 | Expect                          | Action   | Pass/Fail |
+| ----------------------- | ------------------------------- | -------- | --------- |
+| 3 Image Carousel        | Moves through images            | -        | &check;   |
+| Arrow Controls          | Moves through images manually   | Click on | &check;   |
+| Shop Now Button         | Go to All Products Page         | Click on | &check;   |
+| Categories Links        | Go to clicked Products category | Click on | &check;   |
+| Latest Articles Cards   | Go to clicked Article           | Click on | &check;   |
+| Read More Articles link | Go to News                      | Click on | &check;   |
+
+</details>
+
+#### All Products
+
+<details>
+  <summary>All Products</summary>
+
+| Feature                               | Expect                                   | Action   | Pass/Fail |
+| ------------------------------------- | ---------------------------------------- | -------- | --------- |
+| By Price / By Category / All Products | Display Products by selected option      | Click on | &check;   |
+| Number of products                    | Displayed on All Product Pages           | -        | &check;   |
+| Sort By Bar                           | Select from Drop down menu               | Click on | &check;   |
+| Price, (Low to High)                  | Display Products by Price, (Low to High) | Click on | &check;   |
+| Price, (High to Low)                  | Display Products by Price, (High to Low) | Click on | &check;   |
+| Name (A - Z)                          | Display Products by Name (A - Z)         | Click on | &check;   |
+| Name ( Z- A)                          | Display Products by Name ( Z- A)         | Click on | &check;   |
+| Category (A - Z)                      | Display Products by Category (A - Z)     | Click on | &check;   |
+| Category ( Z- A)                      | Display Products by Category ( Z- A)     | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>Products Cards</summary>
+
+| Feature       | Expect                                  | Action   | Pass/Fail |
+| ------------- | --------------------------------------- | -------- | --------- |
+| Products Card | Go to product detail page               | Click on | &check;   |
+| Category Tag  | View all products in that Category Page | Click on | &check;   |
+| Edit Button   | Go to Edit Product Page - Admin Only    | Click on | &check;   |
+| Delete Button | Go to Delete Product Page - Admin Only  | Click on | &check;   |
+
+</details>
+
+
+#### Product Detail
+
+<details>
+  <summary>Products Detail</summary>
+
+| Feature                    | Expect                                               | Action   | Pass/Fail |
+| -------------------------- | ---------------------------------------------------- | -------- | --------- |
+| Category Tag               | View all Products in that Category Page              | Click on | &check;   |
+| Favourites icon            | Add/delete favourite to My Favourites page           | Click on | &check;    |
+| Colour                     | Drop down arrow selector                             | Click on | &check;   |
+| Quantity Selector Add      | Add Number of Item Qty                               | Click on | &check;   |
+| Quantity Selector Subtract | Subtract Number of Item Qty                          | Click on | &check;   |
+| Keep Shopping Button       | Go to All Products page                              | Click on | &check;   |
+| Add to Cart Button         | Adds the Item to the Shopping Cart.                  | Click on | &check;   |
+| Success Toast              | Displays On Clicking the Add to Cart Btn             | Toast    | &check;   |
+| Secure Checkout Button     | Goes to Shopping Cart Page -Success Pop Up           | Click on | &check;   |
+| Leave A Review -Logged Out | No Access Message Displayed                          | -        | &check;   |
+| Login Here Button          | Goes to Login Page                                   | Click on | &check;   |
+| Leave A Review - Logged In | Input Field                                          | Type     | &check;   |
+| Rating - Logged In         | Use Stars to Rate Color Change                       | Click on | &check;   |
+| Submit Button              | Submits Review & Rating                              | Click on | &check;   |
+| Cancel Button              | Clears Review Input & Star Rating                    | Click on | &check;   |
+| Customer Reviews           | Shows 0 if None                                      | -        | &check;   |
+| Customer Displayed         | Shows Name of Reviewer, Date & Time, Review & Rating | -        | &check;   |
+| Edit Button                | Goes to Edit Reivew Page - Only Reviewer             | Click on | &check;   |
+| Delete Button              | Goes to Delete Review Page - Only Reviewer           | Click on | &check;    |
+
+</details>
+
+<details>
+  <summary>Reviews</summary>
+
+| Feature                  | Expect                               | Action   | Pass/Fail |
+| ------------------------ | ------------------------------------ | -------- | --------- |
+| Edit Review Input Field  | Type Update of Review in             | Type     | &check;   |
+| Edit Rating              | Adjust Rating using stars            | Click on | &check;   |
+| Return to Product Button | Returns to the smae Product / Review | Click on | &check;   |
+| Update Button            | Updates the Review                   | Click on | &check;   |
+| Delete Review            | No changes can be made               | Click on | &check;   |
+
+</details>
+
+#### Shopping Bag
+
+<details>
+  <summary>Shopping Bag</summary>
+  
+| Feature                    | Expect                                               | Action   | Pass/Fail  |
+|----------------------------|------------------------------------------------------|----------|------------|
+| Qty control bar            | Add or Subtract up & down Qty toggle                 | Click on | &check;    |
+| Qty - Button               | Subtract Product Qty                                 | Click on | &check;    |
+| Qty + Button               | Add Product Qty                                      | Click on | &check;    |
+| Update                     | Updates Qty Cahnges made                             | Click on | &check;    |
+| Remove                     | Removes Product from Shopping Cart                   | Click on | &check;    |
+| Keep Shopping Button       | Go to All Products Page                              | Click on | &check;    |
+| Secure Checkout Button     | Go to Secure Checkout Page                           | Click on | &check;    |
+
+</details>
+
+#### Secure Check Out
+
+<details>
+  <summary>Secure Check Out</summary>
+
+| Feature                     | Expect                                | Action   | Pass/Fail |
+| --------------------------- | ------------------------------------- | -------- | --------- |
+| Order From                  | Type In Details                       | Type     | ✔         |
+| Save delivery information   | Saves delivery information to profile | Tick Box | ✔         |
+| Payment Input Field         | Input Card Validates if Correct       | Type     | ✔         |
+| Adjust Shopping Cart Button | Goes to Shopping Cart Page            | Click on | &check;   |
+| Complete Order Button       | Processes the Order & Payment         | Click on | &check;   |
+
+</details>
+
+#### Products pages
+
+<details>
+  <summary>Products pages</summary>
+
+| Feature                      | Expect                                             | Action   | Pass/Fail |
+| ---------------------------- | -------------------------------------------------- | -------- | --------- |
+| Cotton Muslins               | Display Cotton Muslins Products only               | Click on | &check;   |
+| Cotton & Bamboo Muslins      | Display Cotton & Bamboo Muslins Products only      | Click on | &check;   |
+| Premium Soft Muslins         | Display Premium Soft Muslins Products only         | Click on | &check;   |
+| All pacifiers                | Display All Muslins Page                           | Click on | &check;   |
+| Mini pacifier chains         | Display Mini pacifier chains Products only         | Click on | &check;   |
+| Personalised pacifier chains | Display Personalised pacifier chains Products only | Click on | &check;   |
+| Pacifier holder case         | Display Pacifier holder case Products only         | Click on | &check;   |
+| All pacifiers                | Display All Pacifiers Page                         | Click on | &check;   |
+| Stroller Chain Teethers      | Display Stroller Chain Teethers only               | Click on | &check;   |
+| Teether Toy Figures          | Display Teether Toy Figures only                   | Click on | &check;   |
+| All Teethers                 | Display All Teethers Page                          | Click on | &check;   |
+| Bibs                         | Display Bibs only                                  | Click on | &check;   |
+| Breasfeeding Necklaces       | Display Breasfeeding Necklaces only                | Click on | &check;   |
+| Personalised Keyrings        | Display Personalised Keyrings only                 | Click on | &check;   |
+| Bracelets                    | Display Bracelets only                             | Click on | &check;   |
+| All Pretty Things            | Display All Pretty Things Page                     | Click on | &check;   |
+
+</details>
+
+#### News
+
+<details>
+  <summary>News</summary>
+
+| Feature          | Expect                                   | Action   | Pass/Fail |
+| ---------------- | ---------------------------------------- | -------- | --------- |
+| Image Card       | Go to Article page                       | Click on | &check;   |
+| Read More Button | Go to Article page                       | Click on | &check;   |
+| Edit Button      | Goes to Edit Article page - Admin only   | Click on | &check;   |
+| Delete Button    | Goes to Delete Article page - Admin only | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>Article details</summary>
+
+| Feature             | Expect                               | Action   | Pass/Fail |
+| ------------------- | ------------------------------------ | -------- | --------- |
+| Back to News Button | Go to News page                      | Click on | &check;   |
+| Edit Button         | Go to Edit Article page - Admin only | Click on | &check;   |
+| Delete Button       | Go to News page - Admin only         | Click on | &check;   |
+
+</details>
+
+#### About Pages
+
+<details>
+  <summary>About Pages</summary>
+
+| Feature        | Expect                      | Action   | Pass/Fail |
+| ------------------- | -----------------------| -------- | --------- |
+| News           | Display News Page           | Click on | &check;   |
+| About Us       | Display About Us Page       | Click on | &check;   |
+| Contact Us     | Display Contact Us Page     | Click on | &check;   |
+| Privacy Policy | Display Privacy Policy Page | Click on | &check;   |
+| Cookie Policy  | Display Cookie Policy Page  | Click on | &check;   |
+| Terms          | Display Terms Page          | Click on | &check;   |
+| Faqs           | Display Faqs Page           | Click on | &check;   |
+
+</details>
+
+#### Contact Us Page
+
+<details>
+  <summary>Contact Us</summary>
+
+| Feature       | Expect                  | Action   | Pass/Fail |
+| ------------- | ----------------------- | -------- | --------- |
+| Contact form  | Fill in form            | Type     | &check;   |
+| Submit Button | Submit the Contact form | Click on | &check;   |
+| Cancel Button | Go to Home page         | Click on | &check;   |
+
+</details>
+
+#### Faqs Page
+
+<details>
+  <summary>Faqs</summary>
+
+| Feature            | Expect               | Action   | Pass/Fail |
+| ------------------ | -------------------- | -------- | --------- |
+| Accordion question | Click reveals answer | Click on | &check;   |
+| Accordion question | Click hides answer   | Click on | &check;   |
+
+</details>
+
+#### Admin Control Front End
+
+<details>
+  <summary>Add Product</summary>
+
+| Feature          | Expect                          | Action   | Pass/Fail |
+| ---------------- | ------------------------------- | -------- | --------- |
+| Add Category     | Select from Drop Down use arrow | Click on | &check;   |
+| Add Product Form | Type in fields                  | Type     | &check;   |
+| Colour           | Select from drop down           | Click on | &check;   |
+| Cancel Button    | Go to All Products Page         | Click on | &check;   |
+| Add Product      | Submit Form to add Product      | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>Edit Product</summary>
+
+| Feature           | Expect                          | Action   | Pass/Fail |
+| ----------------- | ------------------------------- | -------- | --------- |
+| Edit Category     | Select from Drop Down use arrow | Click on | &check;   |
+| Edit Product Form | Edit fields                     | Type     | &check;   |
+| Edit Colour       | Select from drop down           | Click on | &check;   |
+| Cancel Button     | Go to All Products Page         | Click on | &check;   |
+| Add Product       | Submit Form to add Product      | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>Delete Product</summary>
+
+| Feature        | Expect                  | Action   | Pass/Fail |
+| -------------- | ----------------------- | -------- | --------- |
+| Cancel Button  | Go to All Products Page | Click on | &check;   |
+| Delete Product | Delete Product          | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>Add News Article</summary>
+
+| Feature           | Expect                     | Action   | Pass/Fail |
+| ----------------- | -------------------------- | -------- | --------- |
+| Add Article Form  | Add Title and content      | Type     | &check;   |
+| Choose File Image | Add Image                  | Click on | &check;   |
+| Cancel Button     | Go to News Page            | Click on | &check;   |
+| Add Article       | Submit form to add article | Click on | &check;   |
+
+</details>
+
+<details>
+  <summary>Edit News Article</summary>
+
+| Feature           | Expect                        | Action    | Pass/Fail |
+| ----------------- | ----------------------------- | --------- | --------- |
+| Edit Article Form | Edit Title and content        | Type      | &check;   |
+| Clear             | Remove current Image          | Check Box | &check;   |
+| Choose File Image | Add Image                     | Click on  | &check;   |
+| Cancel Button     | Go to News Page               | Click on  | &check;   |
+| Update Article    | Submit form to update article | Click on  | &check;   |
+
+</details>
+
+<details>
+  <summary>Delete News Article</summary>
+
+| Feature        | Expect          | Action   | Pass/Fail |
+| -------------- | --------------- | -------- | --------- |
+| Cancel Button  | Go to News Page | Click on | &check;   |
+| Delete Article | Delete Article  | Click on | &check;   |
+
 </details>
 
 ### Bugs to fix
+
+- Retrieving a Product detail page shows a 500 error sometimes.
+- Adding a product occasionally shows an error.
+- Mobile responsiveness needs improvement on certain pages.
+- Fix rating system to show in all products page.
+
 
 [Back to top](#mi-primera-cajita)
 
